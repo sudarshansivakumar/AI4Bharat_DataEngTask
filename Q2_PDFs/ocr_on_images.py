@@ -1,3 +1,4 @@
+# Performs OCR on all the images for each of the PDFs and stored the PDF text in a text file 
 from PIL import Image
 import pytesseract
 import sys
@@ -8,7 +9,7 @@ from PyPDF2 import PdfFileReader
 import fitz
 
 start_idx = 1
-end_idx = 3
+end_idx = 48
 
 for i in range(start_idx,end_idx) :
     out_file = "PDF" + str(i) + "/output.txt"
